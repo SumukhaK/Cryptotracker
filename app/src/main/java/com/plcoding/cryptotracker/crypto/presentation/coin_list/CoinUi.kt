@@ -1,4 +1,4 @@
-package com.plcoding.cryptotracker.crypto.presentation
+package com.plcoding.cryptotracker.crypto.presentation.coin_list
 
 import android.icu.text.NumberFormat
 import androidx.annotation.DrawableRes
@@ -23,7 +23,7 @@ data class DisplayableNumber(
     val formattedString: String
 )
 
-fun Coin.toCoinUi(): CoinUi{
+fun Coin.toCoinUi(): CoinUi {
     return CoinUi(
         id = id,
         name = name,
@@ -36,7 +36,7 @@ fun Coin.toCoinUi(): CoinUi{
     )
 }
 
-fun Double.toDisplayableNumber(): DisplayableNumber{
+fun Double.toDisplayableNumber(): DisplayableNumber {
 
     val formatter = NumberFormat.getNumberInstance(Locale.getDefault()).apply {
         minimumFractionDigits = 2

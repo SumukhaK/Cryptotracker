@@ -5,4 +5,7 @@
     <string name="error_no_internet">Couldn\'t reach our servers ! Please check your internet connection and try again !..</string>
     <string name="error_something_went_wrong">Something went wrong ! please try again later</string>
     <string name="error_serialization">Couldn\'t serialize or deserialize data !..</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="price">Price</string>
+    <string name="change_last_24hrs">Change last 24hrs</string>
 </resources>

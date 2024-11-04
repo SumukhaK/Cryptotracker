@@ -1,6 +1,5 @@
 package com.plcoding.cryptotracker.crypto.presentation.coin_list
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
@@ -11,8 +10,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.wrapContentHeight
-import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -27,9 +24,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.plcoding.cryptotracker.crypto.domain.Coin
-import com.plcoding.cryptotracker.crypto.presentation.CoinUi
 import com.plcoding.cryptotracker.crypto.presentation.coin_list.components.PriceChange
-import com.plcoding.cryptotracker.crypto.presentation.toCoinUi
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 
 @Composable
@@ -94,4 +89,4 @@ private fun CoinListItemPreview(){
 
 internal val previewCoin = Coin(id = "bitcoin", rank = 1,
     name = "BitCoin", symbol = "BTC", marketCapUsd = 12455675423.98,
-    priceUsd = 67878.876, changePercent24Hr = -0.4).toCoinUi()
+    priceUsd = 67878.876, changePercent24Hr = 0.4).toCoinUi()

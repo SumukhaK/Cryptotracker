@@ -20,7 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.plcoding.cryptotracker.crypto.presentation.DisplayableNumber
+import com.plcoding.cryptotracker.crypto.presentation.coin_list.DisplayableNumber
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 import com.plcoding.cryptotracker.ui.theme.greenBackground
 
@@ -71,6 +71,7 @@ private fun PriceChangePreview(){
         PriceChange(change = DisplayableNumber(
             value = 2.43,
             formattedString = "2.43"
-        ))
+        )
+        )
     }
 }
